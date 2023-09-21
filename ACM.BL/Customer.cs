@@ -23,6 +23,8 @@
             }
         }
 
+        public static int InstanceCount { get; set; }
+
         private string _lastName;
         public string LastName
         {
