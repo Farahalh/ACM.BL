@@ -37,5 +37,50 @@
                 _lastName = value;
             }
         }
+
+        /// <summary>
+        /// Retrieve one customer.
+        /// </summary>
+        public Customer Retriever(int customerId)
+        {
+            // Code that retrieves the defined customer
+
+            return new Customer();
+        }
+
+        /// <summary>
+        /// Retrieve all customers.
+        /// </summary>
+        public List<Customer> Retrieve()
+        {
+            // Code that retrieves all off the customers
+
+            return new List<Customer>();
+        }
+
+        /// <summary>
+        /// Saves the current customer.
+        /// </summary>
+        /// <returns></returns>
+        public bool Save()
+        {
+            // Code that saves the defined customer
+
+            return true;
+        }
+
+        /// <summary>
+        /// Validates the customer data.
+        /// </summary>
+        /// <returns></returns>
+        public bool Validate()
+        {
+            var isValid = true;
+
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAdress)) isValid = false;
+
+            return isValid;
+        }
     }
 }
