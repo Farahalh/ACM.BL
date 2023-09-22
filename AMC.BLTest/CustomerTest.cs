@@ -85,7 +85,7 @@ namespace AMC.BLTest
             var customer = new Customer 
             { 
             LastName = "Baggins",
-            EmailAdress = "fbaggins@hobbiton.me"
+            EmailAddress = "fbaggins@hobbiton.me"
             };
 
             var expected = true;
@@ -103,7 +103,7 @@ namespace AMC.BLTest
             //-- Arrange
             var customer = new Customer
             {
-                EmailAdress = "fbaggins@hobbiton.me"
+                EmailAddress = "fbaggins@hobbiton.me"
             };
 
             var expected = false;
