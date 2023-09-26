@@ -4,19 +4,19 @@
     {
         public Customer()
         {
-            
+
         }
 
         public Customer(int customerId)
         {
-            CustomerId = customerId; 
+            CustomerId = customerId;
         }
         public int CustomerId { get; private set; }
         public string EmailAddress { get; set; }
         public string FirstName { get; set; }
 
-        public string FullName 
-        { 
+        public string FullName
+        {
             get
             {
                 string fullName = LastName;
